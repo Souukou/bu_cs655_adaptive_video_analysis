@@ -16,7 +16,7 @@ https://portal.geni.net/secure/createslice.php
 Add the resource use rspec file in `config/adaptive-video-request-rspec.xml`. You can choose any GENI site but I found Stanford InstaGENI is more reliable than some others.
 
 ```
-https://github.com/Souukou/bu_cs655_adaptive_video_analyzing/raw/main/geni_config/adaptive-video-request-rspec.xml
+https://github.com/Souukou/bu_cs655_adaptive_video_analysis/raw/main/geni_config/adaptive-video-request-rspec.xml
 ```
 
 Make sure you have set up an SSH agent and you should be login to three servers without password. Then we will install some necessary software and download some files into each server.
@@ -26,20 +26,20 @@ Make sure you have set up an SSH agent and you should be login to three servers 
 In the server node, run `scripts/setup/server.sh` to set up using the following command. By default in GENI lab, users have sudo access without prompting password.
 
 ```
-bash <(curl -L https://github.com/Souukou/bu_cs655_adaptive_video_analyzing/raw/main/setup/server.sh)
+bash <(curl -L https://github.com/Souukou/bu_cs655_adaptive_video_analysis/raw/main/setup/server.sh)
 ```
 
 In the router node, run `scripts/setup/router.sh` to set up using the following command.
 
 ```
-bash <(curl -L https://github.com/Souukou/bu_cs655_adaptive_video_analyzing/blob/raw/setup/router.sh)
+bash <(curl -L https://github.com/Souukou/bu_cs655_adaptive_video_analysis/blob/raw/setup/router.sh)
 ```
 
 
 In the client node, run `scripts/setup/client.sh` to set up using the following command.
 
 ```
-bash <(curl -L https://github.com/Souukou/bu_cs655_adaptive_video_analyzing/raw/main/setup/client.sh)
+bash <(curl -L https://github.com/Souukou/bu_cs655_adaptive_video_analysis/raw/main/setup/client.sh)
 ```
 
 ## Experiment 1: Constant Bitrate
@@ -73,7 +73,7 @@ sftp -P 26210 yuhangs@pc5.instageni.stanford.edu:constant_bitrate.zip .
 After that, you will get `constant_bitrate.zip` contains three trace files. Put them into jupyter nodebook `jupyter-notebook/exp_1_constant_bitrate.ipynb`, you can reproduce the graph we shown in the report. You can easily access Google Colab version using the following link.
 
 ```
-https://colab.research.google.com/github/souukou/bu_cs655_adaptive_video_analyzing/blob/main/jupyter-notebook/exp_1_constant_bitrate.ipynb
+https://colab.research.google.com/github/souukou/bu_cs655_adaptive_video_analysis/blob/main/jupyter-notebook/exp_1_constant_bitrate.ipynb
 ```
 
 ## Experiemnt 2: Constant Bitrate with Interrupt
@@ -116,7 +116,7 @@ sftp -P 26210 yuhangs@pc5.instageni.stanford.edu:constant_bitrate_with_interrupt
 After that, you will get `constant_bitrate_with_interrupt.zip` contains three trace files. Put them into jupyter nodebook `jupyter-notebook/exp_2_constant_bitrate_with_interrupt.ipynb`, you can reproduce the graph we shown in the report. You can easily access Google Colab version using the following link.
 
 ```
-https://colab.research.google.com/github/souukou/bu_cs655_adaptive_video_analyzing/blob/main/jupyter-notebook/exp_2_constant_bitrate_with_interrupt.ipynb
+https://colab.research.google.com/github/souukou/bu_cs655_adaptive_video_analysis/blob/main/jupyter-notebook/exp_2_constant_bitrate_with_interrupt.ipynb
 ```
 
 ## Experiemnt 3: Mobile User with Stable Network (bus_62)
@@ -159,7 +159,7 @@ sftp -P 26210 yuhangs@pc5.instageni.stanford.edu:mobile_stable.zip .
 After that, you will get `mobile_stable.zip` contains three trace files. Put them into jupyter nodebook `jupyter-notebook/exp_3_mobile_stable.ipynb`, you can reproduce the graph we shown in the report. You can easily access Google Colab version using the following link.
 
 ```
-https://colab.research.google.com/github/souukou/bu_cs655_adaptive_video_analyzing/blob/main/jupyter-notebook/exp_3_mobile_stable.ipynb
+https://colab.research.google.com/github/souukou/bu_cs655_adaptive_video_analysis/blob/main/jupyter-notebook/exp_3_mobile_stable.ipynb
 ```
 
 ## Experiemnt 4: Mobile User with Unstable Network (car_2)
@@ -202,7 +202,7 @@ sftp -P 26210 yuhangs@pc5.instageni.stanford.edu:mobile_unstable.zip .
 After that, you will get `mobile_unstable.zip` contains three trace files. Put them into jupyter nodebook `jupyter-notebook/exp_4_mobile_unstable.ipynb`, you can reproduce the graph we shown in the report. You can easily access Google Colab version using the following link.
 
 ```
-https://colab.research.google.com/github/souukou/bu_cs655_adaptive_video_analyzing/blob/main/jupyter-notebook/exp_4_mobile_unstable.ipynb
+https://colab.research.google.com/github/souukou/bu_cs655_adaptive_video_analysis/blob/main/jupyter-notebook/exp_4_mobile_unstable.ipynb
 ```
 
 # Experiment Report

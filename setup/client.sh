@@ -17,6 +17,6 @@ echo "Cloning AStream"
 git clone https://github.com/pari685/AStream
 
 echo "Download experiment script"
-wget https://github.com/Souukou/bu_cs655_adaptive_video_analyzing/raw/main/files/exp_client.sh -O ~/exp_client.sh
+wget https://github.com/Souukou/bu_cs655_adaptive_video_analysis/raw/main/files/exp_client.sh -O ~/exp_client.sh
 
 echo "Done"
