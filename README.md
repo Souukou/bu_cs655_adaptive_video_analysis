@@ -32,7 +32,7 @@ bash <(curl -L https://github.com/Souukou/bu_cs655_adaptive_video_analysis/raw/m
 In the router node, run `scripts/setup/router.sh` to set up using the following command.
 
 ```
-bash <(curl -L https://github.com/Souukou/bu_cs655_adaptive_video_analysis/blob/raw/setup/router.sh)
+bash <(curl -L https://github.com/Souukou/bu_cs655_adaptive_video_analysis/raw/main/setup/router.sh)
 ```
 
 
@@ -44,7 +44,7 @@ bash <(curl -L https://github.com/Souukou/bu_cs655_adaptive_video_analysis/raw/m
 
 ## Experiment 1: Constant Bitrate
 
-In your LOCAL computer, run the following command. It takes about 8 minutes. If you use Windows, please use PowerShell (Use Win+X, then click PowerShell/Windows Terminal, depending  on your windows version). Make sure you have already set up an SSH agent so that you can access all nodes without password.
+In your LOCAL computer, run the following command. It takes about 8 minutes. If you use Windows, please use PowerShell (Use Win+X, then click PowerShell/Windows Terminal, depending on your windows version). Make sure you have already set up an SSH agent so that you can access all nodes without password.
 
 ```
 ssh USERNAME@ROUTER_ADDR_ -p ROUTER_PORT 'nohup bash rate-set.sh 1000Kbit >/dev/null 2>&1 &'
@@ -76,7 +76,7 @@ After that, you will get `constant_bitrate.zip` contains three trace files. Put 
 https://colab.research.google.com/github/souukou/bu_cs655_adaptive_video_analysis/blob/main/jupyter-notebook/exp_1_constant_bitrate.ipynb
 ```
 
-## Experiemnt 2: Constant Bitrate with Interrupt
+## Experiment 2: Constant Bitrate with Interrupt
 
 In your LOCAL computer, run the following command. It takes about 10 minutes.
 
@@ -119,7 +119,7 @@ After that, you will get `constant_bitrate_with_interrupt.zip` contains three tr
 https://colab.research.google.com/github/souukou/bu_cs655_adaptive_video_analysis/blob/main/jupyter-notebook/exp_2_constant_bitrate_with_interrupt.ipynb
 ```
 
-## Experiemnt 3: Mobile User with Stable Network (bus_62)
+## Experiment 3: Mobile User with Stable Network (bus_62)
 
 In your LOCAL computer, run the following command. It takes about 30 minutes.
 
@@ -162,7 +162,7 @@ After that, you will get `mobile_stable.zip` contains three trace files. Put the
 https://colab.research.google.com/github/souukou/bu_cs655_adaptive_video_analysis/blob/main/jupyter-notebook/exp_3_mobile_stable.ipynb
 ```
 
-## Experiemnt 4: Mobile User with Unstable Network (car_2)
+## Experiment 4: Mobile User with Unstable Network (car_2)
 
 In your LOCAL computer, run the following command. It takes about 30 minutes.
 
