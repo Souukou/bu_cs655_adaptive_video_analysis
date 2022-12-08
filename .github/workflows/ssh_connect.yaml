@@ -1,5 +1,4 @@
 name: remote ssh command
-on: []
 jobs:
 
   build:
